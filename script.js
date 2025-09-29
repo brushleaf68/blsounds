@@ -1,6 +1,6 @@
 const songs = [
-  "songs/song1/meta.json",
-  "songs/song2/meta.json"
+  "songs/bombusslaboogie/meta.json",
+  "songs/plantairtion/meta.json"
 ];
 
 const songList = document.getElementById("song-list");
@@ -75,3 +75,4 @@ search.addEventListener("input", e => {
 });
 
 loadSongs();
+
