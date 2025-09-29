@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #222;
+  color: white;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+aside {
+  width: 40%;
+  background: #333;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#search {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#song-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.song-bubble {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.song-bubble img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.song-bubble:hover {
+  transform: scale(1.02);
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+main img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+#audio {
+  width: 100%;
+  margin-top: 10px;
+}
+#progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

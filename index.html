@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar with search + songs -->
+    <aside>
+      <input type="text" id="search" placeholder="Type to search...">
+      <div id="song-list"></div>
+    </aside>
+
+    <!-- Main player view -->
+    <main>
+      <img id="cover" src="" alt="Album cover">
+      <h2 id="title">Song Name</h2>
+      <p id="album">Album • Date</p>
+
+      <audio id="audio" controls></audio>
+      <div id="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress" value="0">
+        <span id="duration">0:00</span>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
